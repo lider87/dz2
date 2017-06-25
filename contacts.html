@@ -9,7 +9,7 @@
 		<ul>
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="catalog.html">Каталог</a></li>
-			<li><a href="contacts.html">Контакты</a></li>
+			<li>Контакты</li>
 		</ul>
 	</header>
 	<hr>
@@ -19,22 +19,25 @@
 		Телефон: +7 (800) 00-88-80<br>
 		Email: monocolesnik@ymail.ru</p>
 	<h2>Напишите нам</h2>
-	<form action="mailto:monorolesnik@ymail.ru" method="get">
-		<div>
-			<input type="text" placeholder="Введите ФИО">
-		</div>
-		<div>
-			<input type="text" placeholder="Email">
-		</div>
-		<div>
-			<input type="text" placeholder="Тема обращения">
-		</div>
-		<div>
-			<textarea cols="60" rows="10"></textarea>
-		</div>
-		<div>
-			<input type="submit" value="Отправить">
-		</div>
+	<form action="mailto:monorolesnik@ymail.ru" method="post" name="test">
+		<fieldset>
+			<legend>Форма оратной связи</legend>
+			<div>
+				<input type="text" placeholder="Введите ФИО" name="name" required>
+			</div>
+			<div>
+				<input type="email" placeholder="email" name="email" required>
+			</div>
+			<div>
+				<input type="text" placeholder="Тема обращения" name="subject" required>
+			</div>
+			<div>
+				<textarea cols="60" rows="10"  name="comment" required></textarea>
+			</div>
+			<div>
+				<input type="submit" value="Отправить">
+			</div>
+		</fieldset>
 	</form>
 	<hr>
 	<footer>
